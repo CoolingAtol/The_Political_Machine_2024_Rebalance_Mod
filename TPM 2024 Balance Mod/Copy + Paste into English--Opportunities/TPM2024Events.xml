@@ -1,0 +1,1084 @@
+<RandomEvents>  
+
+    <!--<CRandomEvent InternalName="Choices_MrMoneyBags">
+        <Image>Event_MoneyMan</Image>
+        <Headline>Message from Mr.Richman Fancyson III</Headline>
+        <Paragraph>Greetings and Salutations. I've been following your campaign closely and would like to help making President {CandidateLName} a reality. You can tell by my bags of gold coins that I can easily assist financially, or I can provide some other assistance if needed. Just let me know how I can help!</Paragraph>
+
+        <Options>
+            <Option>
+                <DisplayName>Bags of Gold would be Perfect!</DisplayName>
+                <FollowUpText>Here are three bags of gold. Spend it wisely!</FollowUpText>
+                <FollowUpResponse>Thanks! [+$600k]</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyPlayerStat</Type>
+                        <ModifyType>Add</ModifyType>
+                        <PlayerStatType>Funds</PlayerStatType>
+                        <Value>600</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+            <Option>
+                <DisplayName>I'd Like some Operatives...</DisplayName>
+                <FollowUpText>I know several people that would be very interested in helping your endevour. They will be there shortly.</FollowUpText>
+                <FollowUpResponse>Thanks! [+2 Cheerleaders]</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>AddOperative</Type>
+                        <StringValue>CHEERLEADER</StringValue>
+                        <StateTarget>OwnerState</StateTarget>
+                        <Value>2</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+            <Option>
+                <DisplayName>Some Political Capital would be Nice.</DisplayName>
+                <FollowUpText>I know of some media outlets that can help get your message out.</FollowUpText>
+                <FollowUpResponse>Thanks! [+3 Political Capital]</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyPlayerStat</Type>
+                        <ModifyType>Add</ModifyType>
+                        <PlayerStatType>PoliticalCapital</PlayerStatType>
+                        <Value>3</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+        </Options>
+    </CRandomEvent>
+
+    <CRandomEvent InternalName="Choices_BadBoys">
+        <Image>Event_Heckler</Image>
+        <Headline>Message from the {CandidateLName} Bros</Headline>
+        <Paragraph>Yo, {CandidateFName}! Your Loyal League of {CandidateLName} Bros is ready to help the cause. What do you want from us?  Need us to canvas for cash?  Looking for some Intimidators to drop {OpponentLName}'s approval like a stone?  Holler back ASAP!</Paragraph>
+        <Options>
+            <Option>
+                <DisplayName>Cash...the more, the better!</DisplayName>
+                <FollowUpText>Done! Already had people lining up with the assist. How's $125k sound to you? Bam!</FollowUpText>
+                <FollowUpResponse>Thanks! [+$425k]</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyPlayerStat</Type>
+                        <ModifyType>Add</ModifyType>
+                        <PlayerStatType>Funds</PlayerStatType>
+                        <Value>425</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+            <Option>
+                <DisplayName>Some Intimidators would be perfect!</DisplayName>
+                <FollowUpText>Done! Ralph and Little Henry are on their way. Send them to those pink states to get folks thinking twice about voting for {OpponentLName}.</FollowUpText>
+                <FollowUpResponse>Thanks! [+2 Intimidators]</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>AddOperative</Type>
+                        <StringValue>INTIMIDATOR</StringValue>
+                        <StateTarget>OwnerState</StateTarget>
+                        <Value>2</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+            <Option>
+                <DisplayName>Some Political Capital would be Nice.</DisplayName>
+                <FollowUpText>Not really an 'Capital' kinda guy myself, but we'll do what we can.</FollowUpText>
+                <FollowUpResponse>Thanks! [+2 Political Capital]</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyPlayerStat</Type>
+                        <ModifyType>Add</ModifyType>
+                        <PlayerStatType>PoliticalCapital</PlayerStatType>
+                        <Value>2</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+        </Options>
+    </CRandomEvent>
+
+    <CRandomEvent InternalName="Choices_Hacker">
+        <Image>Event_JadedConsultant</Image>
+        <Headline>Message from a 'Hacking Expert'</Headline>
+        <Paragraph>Hello Future President {CandidateLName}. I've been digging into some data, also known as 'hacking', and I'm finding some information that you'll find most...informative. For a cool $25k you can take down some of {OpponentLName}'s hired help...</Paragraph>
+        <Options>
+            <Option>
+                <DisplayName>Keep your hacked data - my ethics aren't for sale!</DisplayName>
+            </Option>
+            <Option>
+                <DisplayName>Give me the dirt - my ethics are absolutely for sale!</DisplayName>
+                <FollowUpText>Excellent! I'm sending over some dubious looking guys with the incriminating packets of data. Use them to knock out {OpponentLName}'s operatives.</FollowUpText>
+                <FollowUpResponse>Thanks! [+2 Fixers] [-25k]</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>AddOperative</Type>
+                        <StringValue>INTIMIDATOR</StringValue>
+                        <StateTarget>OwnerState</StateTarget>
+                        <Value>2</Value>
+                    </InstantEffect>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyPlayerStat</Type>
+                        <ModifyType>Add</ModifyType>
+                        <PlayerStatType>Funds</PlayerStatType>
+                        <Value>-25</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+        </Options>
+    </CRandomEvent>
+
+    <CRandomEvent InternalName="Choices_Fashion">
+        <Image>Operative_Info_Image_FashionConsultant</Image>
+        <Headline>Message from a Fashion Guru</Headline>
+        <Paragraph>I will cut to the chase. I've seen you on television and you look dreadful. But I like your message. How can I be of service to the {CandidateLName} campaign?</Paragraph>
+        <Options>
+            <Option>
+                <DisplayName>Make me one of the beautiful people!</DisplayName>
+                <FollowUpText>Let's get you looking fabulous! The whole nation will be stunned when we're finished...</FollowUpText>
+                <FollowUpResponse>Thanks! [+3 National Enthusiasm]</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyEnthusiasm</Type>
+                        <ModifyType>Add</ModifyType>
+                        <StateTarget>AllStates</StateTarget>
+                        <Value>3</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+            <Option>
+                <DisplayName>I need to improve my image on the issues.</DisplayName>
+                <FollowUpText>I have some medical friends that can give your messaging a nip and a tuck. Use them wisely.</FollowUpText>
+                <FollowUpResponse>Thanks! [+2 Spin Doctors]</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>AddOperative</Type>
+                        <StringValue>SPINDOCTOR</StringValue>
+                        <StateTarget>OwnerState</StateTarget>
+                        <Value>2</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+            <Option>
+                <DisplayName>A small donation is all I really need.</DisplayName>
+                <FollowUpText>While I'm heartbroken that you will continue to look like...that...I understand your financial needs. I will gladly dontate.</FollowUpText>
+                <FollowUpResponse>Thanks! [+400k]</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyPlayerStat</Type>
+                        <ModifyType>Add</ModifyType>
+                        <PlayerStatType>Funds</PlayerStatType>
+                        <Value>400</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+
+        </Options>
+
+    </CRandomEvent>
+
+    <CRandomEvent InternalName="Choices_IdeologyDefiner">
+        <Image>Event_Definer</Image>
+        <Headline>Message from Johnny Star (aka. 'The Campaign Cowboy')</Headline>
+        <Paragraph>Well howdy, {CandidateFName}. You're doing a good job defining your platform, but with Ol' Johny's help, your Ideology can take over the map! So what do you say...how can I help the {CandidateLName} Campaign?</Paragraph>
+        <Options>
+            <Option>
+                <DisplayName>I reckon some Political Capital would be nice...</DisplayName>
+                <FollowUpText>Well then, let's wrangle up some media outlets and get your message out there!</FollowUpText>
+                <FollowUpResponse>Thanks! [+5 Political Capital]</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyPlayerStat</Type>
+                        <ModifyType>Add</ModifyType>
+                        <PlayerStatType>PoliticalCapital</PlayerStatType>
+                        <Value>5</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+            <Option>
+                <DisplayName>Some extra cash would be mighty helpful!</DisplayName>
+                <FollowUpText>Then some extra cash is what you shall have, Future President {CandidateLName}. Good luck, partner!</FollowUpText>
+                <FollowUpResponse>Thanks! [+$400k]</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyPlayerStat</Type>
+                        <ModifyType>Add</ModifyType>
+                        <PlayerStatType>Funds</PlayerStatType>
+                        <Value>400</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+            <Option>
+                <DisplayName>Have any operatives to lend a hand?</DisplayName>
+                <FollowUpText>Sure do! I'll send them right over!</FollowUpText>
+                <FollowUpResponse>Thanks! [+2 Intimidators]</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>AddOperative</Type>
+                        <StringValue>INTIMIDATOR</StringValue>
+                        <StateTarget>OwnerState</StateTarget>
+                        <Value>2</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+        </Options>
+    </CRandomEvent>
+
+    <CRandomEvent InternalName="Choices_Grandma">
+        <Image>Event_Storyteller</Image>
+        <Headline>Message from Grandma</Headline>
+        <Paragraph>Hi Sweetheart. Thanks for taking time out of your busy schedule for lil' old me. I was wondering if there was anything I could do to help you out? Some cookies, perhaps? Or maybe some Ideology Points?</Paragraph>
+        <Options>
+            <Option>
+                <DisplayName>Sure - I could use Political Capital!</DisplayName>
+                <FollowUpText>I have some stories from your childhood that should get you some attention. XOXOXOXOX -Grandma</FollowUpText>
+                <FollowUpResponse>Thanks Grandma! [+3 Political Capital]</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyPlayerStat</Type>
+                        <ModifyType>Add</ModifyType>
+                        <PlayerStatType>PoliticalCapital</PlayerStatType>
+                        <Value>3</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+            <Option>
+                <DisplayName>I'm actually in need of some money...</DisplayName>
+                <FollowUpText>I have some friends at the local knitting circle that would love to chip in! XOXOXOXOX -Grandma</FollowUpText>
+                <FollowUpResponse>Thanks Grandma! [+$675k]</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyPlayerStat</Type>
+                        <ModifyType>Add</ModifyType>
+                        <PlayerStatType>Funds</PlayerStatType>
+                        <Value>675</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+            <Option>
+                <DisplayName>Some of your cookies sounds great - Thanks!</DisplayName>
+                <FollowUpText>I'm sending the cookies with some friends of mine from the local bingo hall. They're always talking politics and would like to help you out! XOXOXOXOX -Grandma</FollowUpText>
+                <FollowUpResponse>Thanks Grandma! [+2 Random Operatives]</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>AddOperative</Type>
+                        <StringValue>CHEERLEADER</StringValue>
+                        <StateTarget>OwnerState</StateTarget>
+                        <Value>2</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+        </Options>
+    </CRandomEvent>
+
+    <CRandomEvent InternalName="Choices_Consultant">
+        <Image>Operative_Info_Image_Consultant</Image>
+        <Headline>Message from a Political Consultant</Headline>
+        <Paragraph>Alright {CandidateLName}, I'm gonna make this quick. See this green smile? That's voter enthusiasm, and you need more of it. I like you, and want to help you get more smiles. What do you need, {CandidateFName}?</Paragraph>
+        <Options>
+            <Option>
+                <DisplayName>Uh...Political Capital?</DisplayName>
+                <FollowUpText>You got it, {CandidateFName}. Let's get your message out there!</FollowUpText>
+                <FollowUpResponse>Thanks! [+2 Political Capital]</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyPlayerStat</Type>
+                        <ModifyType>Add</ModifyType>
+                        <PlayerStatType>PoliticalCapital</PlayerStatType>
+                        <Value>2</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+            <Option>
+                <DisplayName>Uh...Funds?</DisplayName>
+                <FollowUpText>You got it, {CandidateFName}. Big bucks coming your way.</FollowUpText>
+                <FollowUpResponse>Thanks! [+$550k]</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyPlayerStat</Type>
+                        <ModifyType>Add</ModifyType>
+                        <PlayerStatType>Funds</PlayerStatType>
+                        <Value>550</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+            <Option>
+                <DisplayName>Uh...Operatives?</DisplayName>
+                <FollowUpText>You got it, {CandidateFName}. Two fresh-faced helping hands coming your way.</FollowUpText>
+                <FollowUpResponse>Thanks! [+2 Spin Doctors]</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>AddOperative</Type>
+                        <StringValue>SPINDOCTOR</StringValue>
+                        <StateTarget>OwnerState</StateTarget>
+                        <Value>2</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+        </Options>
+    </CRandomEvent>
+
+    <CRandomEvent InternalName="TestEventNegativeTargeted">
+        <Image>Operative_Info_Image_WebMaster</Image>
+        <Headline>Message from a Large Bank</Headline>
+        <Paragraph>Alright {CandidateLName}, I'm gonna make this quick. We recently found a vault full of IOUs from your campaign and it turns out you owe us $500k. We need you to start paying off this debt immediately. How would you like to do that?</Paragraph>
+        <EventQualityType>Negative</EventQualityType>
+        <EventTargetType>Player</EventTargetType>
+        <Options>
+            <Option>
+                <DisplayName>Start paying it in installments, but with 10% interest.</DisplayName>
+                <FollowUpText>Good. We'll have you start paying in $55k installments per week for 10 weeks. Good luck out there, {CandidateLName}.</FollowUpText>
+                <FollowUpResponse>Great, thanks. [-$55k per turn for 10 turns]</FollowUpResponse>
+                <LongTermEffects>
+                    <LongTermEffect>
+                        <HasLifetime>true</HasLifetime>
+                        <Lifetime>10</Lifetime>
+                        <TriggeredEffects>
+                            <TriggeredEffect>
+                                <TriggerType>OnEndTurn</TriggerType>
+                                <EffectModifiers>
+                                    <EffectModifier>
+                                        <Target>TargetPlayer</Target>
+                                        <Type>ModifyPlayerStat</Type>
+                                        <ModifyType>Add</ModifyType>
+                                        <PlayerStatType>Funds</PlayerStatType>
+                                        <Value>-55</Value>
+                                    </EffectModifier>
+                                </EffectModifiers>
+                            </TriggeredEffect>
+                        </TriggeredEffects>
+                    </LongTermEffect>
+                </LongTermEffects>
+            </Option>
+            <Option>
+                <DisplayName>Call in a few favors.</DisplayName>
+                <FollowUpText>Hmm, I see. We'll have to call your people and I'm sure we can work something out.</FollowUpText>
+                <FollowUpResponse>Great, thanks. [-3 Political Capital]</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyPlayerStat</Type>
+                        <ModifyType>Add</ModifyType>
+                        <PlayerStatType>PoliticalCapital</PlayerStatType>
+                        <Value>-3</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+            <Option>
+                <DisplayName>Pay it all off immediately</DisplayName>
+                <FollowUpText>Oh, I didn't realize you could afford something like that. Alright then, we'll take it all upfront.</FollowUpText>
+                <FollowUpResponse>OK [-$500k]</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyPlayerStat</Type>
+                        <ModifyType>Add</ModifyType>
+                        <PlayerStatType>Funds</PlayerStatType>
+                        <Value>-500</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+        </Options>
+    </CRandomEvent>-->
+
+    <CRandomEvent InternalName="BigPharmaOffer">
+        <Image>EventImage_BigPharmaOffer</Image>
+        <Headline>Offer from Big Pharma</Headline>
+        <Paragraph>Good afternoon, {CandidateLName}. You seem like a promising candidate and one the company I represent is most interested in ...working with. We can offer some funds in exchange for a favorable position on Pharmaceutical Companies.</Paragraph>
+        <Options>
+            <Option>
+                <DisplayName>That sounds like a good deal, I accept. This won't get out to the American People, right?</DisplayName>
+                <FollowUpText>Excellent. We appreciate your support. And to answer your question, this will remain perfectly silent. (A crowd of News Reporters flood in the room asking about the meeting)
+
+[+200K Funds, +20 Stance on Pharmaceutical Companies, -1% Enthusiasm in All States.]</FollowUpText>
+                <FollowUpResponse>Thank you.</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyPlayerStat</Type>
+                        <ModifyType>Add</ModifyType>
+                        <PlayerStatType>Funds</PlayerStatType>
+                        <Value>200</Value>
+                    </InstantEffect>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyStance</Type>
+                        <ModifyType>Add</ModifyType>
+                        <StateTarget>AllStates</StateTarget>
+                        <StringValue>BIG_PHARMA</StringValue>
+                        <Value>20</Value>
+                    </InstantEffect>
+					<InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyEnthusiasm</Type>
+                        <ModifyType>Add</ModifyType>
+                        <StateTarget>AllStates</StateTarget>
+                        <Value>-1</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+            <Option>
+                <DisplayName>I can't accept your offer.</DisplayName>
+                <FollowUpText>Pity. We'll simply have to pursue other methods of getting our good word out.
+
+[-20 Stance on Pharmaceutical Companies in all States, +2 Issue Importance on Pharmaceutical Companies in all States.]</FollowUpText>
+                <FollowUpResponse>Goodbye.</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyStance</Type>
+                        <ModifyType>Add</ModifyType>
+                        <StateTarget>AllStates</StateTarget>
+                        <StringValue>BIG_PHARMA</StringValue>
+                        <Value>-20</Value>
+                    </InstantEffect>
+                    <InstantEffect>
+                        <Type>ModifyStateIssueImportance</Type>
+                        <StateTarget>AllStates</StateTarget>
+                        <StringValue>BIG_PHARMA</StringValue>
+                        <Value>2</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+        </Options>
+    </CRandomEvent>
+
+    <CRandomEvent InternalName="RoughLanding">
+        <Image>EventImage_RoughLanding</Image>
+        <Headline>Rough Landing</Headline>
+        <Paragraph>Upon trying to land, an issue with the landing equipment caused an unexpected delay. While the repair is simple and inexpensive, the time and opportunities it has cost are harsh.
+
+[-4 Stamina]</Paragraph>
+        <Options>
+            <Option>
+                <DisplayName>Understood</DisplayName>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyPlayerStat</Type>
+                        <ModifyType>Add</ModifyType>
+                        <PlayerStatType>Stamina</PlayerStatType>
+                        <Value>-4</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+        </Options>
+    </CRandomEvent>
+	
+	<CRandomEvent InternalName="CarStumble">
+        <Image>EventImage_RoughLanding</Image>
+        <Headline>Car Stumble</Headline>
+        <Paragraph>While trying to enter your motorcade, you were seen falling, and stumbling into your seat, before a crowd of assistants pulled you up. The media have begun to portray you as too weak to be president.
+
+[Lose All Stamina, -7% Enthusiasm in Current State, -3% Enthusiasm in All States]</Paragraph>
+        <Options>
+            <Option>
+                <DisplayName>Understood</DisplayName>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyPlayerStat</Type>
+                        <ModifyType>Set</ModifyType>
+                        <PlayerStatType>Stamina</PlayerStatType>
+                        <Value>0</Value>
+                    </InstantEffect>
+					<InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyEnthusiasm</Type>
+                        <ModifyType>Add</ModifyType>
+                        <StateTarget>AllStates</StateTarget>
+                        <Value>-3</Value>
+                    </InstantEffect>
+					<InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyEnthusiasm</Type>
+                        <ModifyType>Add</ModifyType>
+                        <StateTarget>TargetState</StateTarget>
+                        <Value>-7</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+        </Options>
+    </CRandomEvent>
+
+    <CRandomEvent InternalName="EmbarassingPhoto">
+        <Image>EventImage_EmbarassingPhoto</Image>
+        <Headline>Message from Mysterious Photographer</Headline>
+        <Paragraph>I'll keep this short -I have a somewhat unflattering photo of you. It's not incriminating or explicit, but it is embarrassing. For 250K I could ensure the photo never makes it from my camera.</Paragraph>
+        <Options>
+            <Option>
+                <DisplayName>I'd pay more for a good photo.</DisplayName>
+                <FollowUpText>You're a clever candidate. You may have what it takes to be President after all. Alright, I'll see what I can do.
+
+[-1M Funds, +2% Enthusiasm in all States.]</FollowUpText>
+                <FollowUpResponse>Thank you.</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyPlayerStat</Type>
+                        <ModifyType>Add</ModifyType>
+                        <PlayerStatType>Funds</PlayerStatType>
+                        <Value>-1000</Value>
+                    </InstantEffect>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyEnthusiasm</Type>
+                        <ModifyType>Add</ModifyType>
+                        <StateTarget>AllStates</StateTarget>
+                        <Value>2</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+            <Option>
+                <DisplayName>You have a deal, even if it is slimy.</DisplayName>
+                <FollowUpText>I appreciate you understand the importance of a clean public image.
+
+[-250K Funds]</FollowUpText>
+                <FollowUpResponse>Leave me alone now.</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyPlayerStat</Type>
+                        <ModifyType>Add</ModifyType>
+                        <PlayerStatType>Funds</PlayerStatType>
+                        <Value>-250</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+            <Option>
+                <DisplayName>Release the photo; I'm too busy to care.</DisplayName>
+                <FollowUpText>Sorry to have wasted both our time.
+
+[-10% Enthusiasm in all States.]</FollowUpText>
+                <FollowUpResponse>Goodbye.</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyEnthusiasm</Type>
+                        <ModifyType>Add</ModifyType>
+                        <StateTarget>AllStates</StateTarget>
+                        <Value>-10</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+        </Options>
+    </CRandomEvent>
+
+    <CRandomEvent InternalName="NaturalDisaster">
+        <Image>EventImage_NaturalDisaster</Image>
+        <Headline>Nearby Natural Disaster</Headline>
+        <Paragraph>A recent disaster has struck the local community at your latest stop. The tragedy has left many in need and working to recover. It might not be glorious work or deliver a particular message, but spending time helping could revitalize your public image. You'd be sacrificing the rest of your Stamina for Enthusiasm.</Paragraph>
+        <Options>
+            <Option>
+                <DisplayName>Help the Relief Effort.</DisplayName>
+                <FollowUpText>You roll up your sleeves and, in front of plenty of cameras, help those affected by one of the most recent natural disasters.
+
+[Lose all Stamina, +10% Enthusiasm in current state.]</FollowUpText>
+                <FollowUpResponse>Understood.</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyPlayerStat</Type>
+                        <ModifyType>Set</ModifyType>
+                        <PlayerStatType>Stamina</PlayerStatType>
+                        <Value>0</Value>
+                    </InstantEffect>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyEnthusiasm</Type>
+                        <ModifyType>Add</ModifyType>
+                        <StateTarget>TargetState</StateTarget>
+                        <Value>10</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+            <Option>
+                <DisplayName>Avoid the Disaster Area.</DisplayName>
+				<FollowUpText>The Media mock you for avoiding the area.
+
+[-5% Enthusiasm in all States.]</FollowUpText>
+				<InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyEnthusiasm</Type>
+                        <ModifyType>Add</ModifyType>
+                        <StateTarget>AllStates</StateTarget>
+                        <Value>-5</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+        </Options>
+    </CRandomEvent>
+
+    <CRandomEvent InternalName="NewspaperInsider">
+        <Image>EventImage_NewspaperInsider</Image>
+        <Headline>Call from Newspaper Insider</Headline>
+        <Paragraph>I have thirty seconds. I'm just calling to let you know that tomorrow's headlines will be dominated by the birth of some endangered animal at some zoo someplace. I've told no one else. Anyways, gotta go. Bye!
+
+[Next Turn: Decrease Ad Effectiveness in all states by 40% for 1 turn]</Paragraph>
+        <Options>
+            <Option>
+                <DisplayName>Thanks for the heads-up.</DisplayName>
+                <LongTermEffects>
+                    <LongTermEffect>
+                        <Name>NewspaperInsider</Name>
+                        <HasLifetime>true</HasLifetime>
+                        <Lifetime>2</Lifetime>
+                        <DisplayText>All Ad Effectiveness reduced by 40%.</DisplayText>
+                        <VisibilityState>VisibleToOwner</VisibilityState>
+                        <TriggeredEffects>
+                            <TriggeredEffect>
+                                <TriggerType>OnNewTurn</TriggerType>
+								<SetSelfVisibilityState>VisibleToAll</SetSelfVisibilityState>
+                                <EffectModifiers>
+                                    <EffectModifier>
+                                        <Target>AllPlayers</Target>
+                                        <Type>ModifyPlayerStat</Type>
+                                        <ModifyType>Add</ModifyType>
+                                        <StateTarget>AllStates</StateTarget>
+                                        <PlayerStatType>AdEffectiveness</PlayerStatType>
+                                        <StringValue />
+                                        <Value>-0.4</Value>
+                                    </EffectModifier>
+                                </EffectModifiers>
+                                <NotificationData>
+                                    <NotificationTitle>Distracted Populace</NotificationTitle>
+                                    <NotificationImage />
+                                    <NotificationPopupFlavorText>
+                                        <PopupText>Headlines and top stories are sidetracked by something other than politics. The story will pass and attention will return, but for the time ads will be less effective.</PopupText>
+                                    </NotificationPopupFlavorText>
+                                    <NotificationEffectText>Ad Effectiveness reduced by 40%.</NotificationEffectText>
+                                    <WhoToNotify>InformAll</WhoToNotify>
+                                </NotificationData>
+                            </TriggeredEffect>
+							<TriggeredEffect>
+								<TriggerType>OnDeath</TriggerType>
+								<ShouldCancelTriggeringEffect>false</ShouldCancelTriggeringEffect>
+								<RemoveEffectAfterActivation>false</RemoveEffectAfterActivation>
+								<SetSelfVisibilityState>Size</SetSelfVisibilityState>
+								<DoNotAffectOwningPlayer>false</DoNotAffectOwningPlayer>
+								<EffectModifiers>
+									<EffectModifier>
+										<Target>AllPlayers</Target>
+										<Type>ModifyPlayerStat</Type>
+										<ModifyType>Add</ModifyType>
+										<StateTarget>AllStates</StateTarget>
+										<PlayerStatType>AdEffectiveness</PlayerStatType>
+										<StringValue />
+										<Value>0.4</Value>
+									</EffectModifier>
+								</EffectModifiers>
+							</TriggeredEffect>
+                        </TriggeredEffects>
+                    </LongTermEffect>
+                </LongTermEffects>
+            </Option>
+        </Options>
+    </CRandomEvent>
+
+    <CRandomEvent InternalName="ColleagueMessage">
+        <Image>EventImage_ColleagueMessage</Image>
+        <Headline>Message from a Colleague</Headline>
+        <Paragraph>Hey {CandidateLName}. Been watching your campaign from a distance whenever I can spare a second. I can't offer anything directly, but I might know someone who knows someone. What would help the most?</Paragraph>
+        <Options>
+            <Option>
+                <DisplayName>I need more energy to get more done.</DisplayName>
+                <FollowUpText>Oh! I've got some good news for that. I know someone who owns a coffee shop. They'll happily support a high-profile candidate with some free, super-caffeinated stuff.
+
+[Gain 3 Extra Coffee cards (0 Cost, Gain 2 Stamina).]</FollowUpText>
+                <FollowUpResponse>Thanks!</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>AddActionCard</Type>
+                        <StringValue>ExtraCoffee</StringValue>
+                        <Value>3</Value>
+                    </InstantEffect>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>AddActionCard</Type>
+                        <StringValue>ExtraCoffee</StringValue>
+                        <Value>3</Value>
+                    </InstantEffect>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>AddActionCard</Type>
+                        <StringValue>ExtraCoffee</StringValue>
+                        <Value>3</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+            <Option>
+                <DisplayName>I keep running out of Political Capital.</DisplayName>
+                <FollowUpText>I know a few newly elected politicians that could get you a bit more sway in D.C.
+
+[Gain 2 Naive Politician cards (0 Cost, Gain 0.5 Political Capital for 3 turns).]</FollowUpText>
+                <FollowUpResponse>I'll make sure they get experience.</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>AddActionCard</Type>
+                        <StringValue>NaivePolitician</StringValue>
+                        <Value>2</Value>
+                    </InstantEffect>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>AddActionCard</Type>
+                        <StringValue>NaivePolitician</StringValue>
+                        <Value>2</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+            <Option>
+                <DisplayName>I need some funds; this campaign is proving expensive.</DisplayName>
+                <FollowUpText>I can't get you funds directly, but I might know a few mysterious donors looking to burn some cash.
+
+[Gain 1 Mysterious Donors card (0 Cost, Increase Fundraising Effectiveness 300% for 1 turn).]</FollowUpText>
+                <FollowUpResponse>I appreciate the introductions.</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>AddActionCard</Type>
+                        <StringValue>MysteriousDonors</StringValue>
+                        <Value>1</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+        </Options>
+    </CRandomEvent>
+
+    <CRandomEvent InternalName="IndustryLoss">
+        <Image>EventImage_IndustryLoss</Image>
+        <Headline>Loss of Industry</Headline>
+        <Paragraph>A nearby community at your latest stop has suffered a devastating loss of jobs. A confluence of factors has taken an industry away that once supported the entire metropolitan area, leaving many out of work and newly laid off. Getting out of the area will be hard without addressing the issue.</Paragraph>
+        <Options>
+            <Option>
+                <DisplayName>Promise to bring the jobs back.</DisplayName>
+                <FollowUpText>You promise to work closely with the corporations to identify regulations, taxes, and tariffs that would encourage them to bring jobs back to the area.
+
+[-10 Stance on Job Outsourcing in all States.]</FollowUpText>
+                <FollowUpResponse>Understood.</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyStance</Type>
+                        <ModifyType>Add</ModifyType>
+                        <StateTarget>AllStates</StateTarget>
+                        <StringValue>OUTSOURCINGJOBS</StringValue>
+                        <Value>-10</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+            <Option>
+                <DisplayName>Promise to better train people for new jobs.</DisplayName>
+                <FollowUpText>You promise to funnel resources into programs that will help train those out of work for new jobs that require skilled labor and specialization.
+
+[+10 Stance on Job Training in all States.]</FollowUpText>
+                <FollowUpResponse>Understood.</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyStance</Type>
+                        <ModifyType>Add</ModifyType>
+                        <StateTarget>AllStates</StateTarget>
+                        <StringValue>JOBS</StringValue>
+                        <Value>10</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+            <Option>
+                <DisplayName>Give only non-committal responses.</DisplayName>
+                <FollowUpText>You avoid ever addressing the issue directly and attempt to express sympathies. It's not particularly comforting or effective.
+
+[-10% Enthusiasm in the State]</FollowUpText>
+                <FollowUpResponse>Understood.</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyEnthusiasm</Type>
+                        <ModifyType>Add</ModifyType>
+                        <StateTarget>TargetState</StateTarget>
+                        <Value>-10</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+        </Options>
+    </CRandomEvent>
+
+    <CRandomEvent InternalName="AlmaMater">
+        <Image>EventImage_AlmaMater</Image>
+        <Headline>Alma Mater Speaking Engagement</Headline>
+        <Paragraph>Your alma mater (or at least a school willing to say you graduated from it) has asked you to deliver a short virtual speech to the current student body. Such a speaking opportunity is an excellent opportunity to spread your message to a younger group about issues they care about.</Paragraph>
+        <Options>
+            <Option>
+                <DisplayName>Support student loan forgiveness.</DisplayName>
+                <FollowUpText>You take the opportunity to reinforce your campaign message about Student Loan Forgiveness.
+
+[+2 Importance to College Expenses/Student Debt in all States, +2% Enthusiasm in all States]</FollowUpText>
+                <FollowUpResponse>Understood.</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Type>ModifyStateIssueImportance</Type>
+                        <ModifyType>Add</ModifyType>
+                        <StateTarget>AllStates</StateTarget>
+                        <StringValue>LOANFORGIVE</StringValue>
+                        <Value>2</Value>
+                    </InstantEffect>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyEnthusiasm</Type>
+                        <ModifyType>Add</ModifyType>
+                        <StateTarget>AllStates</StateTarget>
+                        <Value>2</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+            <Option>
+                <DisplayName>Oppose cancel culture.</DisplayName>
+                <FollowUpText>You take the opportunity to reinforce your campaign message about Cancel Culture.
+
+[+2 Importance to Cancel Culture in all States, +2% Enthusiasm in all States]</FollowUpText>
+                <FollowUpResponse>Understood.</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Type>ModifyStateIssueImportance</Type>
+                        <ModifyType>Add</ModifyType>
+                        <StateTarget>AllStates</StateTarget>
+                        <StringValue>THOUGHTPOLICE</StringValue>
+                        <Value>2</Value>
+                    </InstantEffect>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyEnthusiasm</Type>
+                        <ModifyType>Add</ModifyType>
+                        <StateTarget>AllStates</StateTarget>
+                        <Value>2</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+            <Option>
+                <DisplayName>Politely refuse.</DisplayName>
+            </Option>
+        </Options>
+    </CRandomEvent>
+
+    <CRandomEvent InternalName="ReplyAll">
+        <Image>EventImage_ReplyAll</Image>
+        <Headline>Reply All</Headline>
+        <Paragraph>Someone on your campaign team recently accidentally hit 'Reply All' to an email and complained about working for you. The email ended up online before you saw it or had a chance to address it. You can't let the complaints go unanswered.</Paragraph>
+        <Options>
+            <Option>
+                <DisplayName>Meet with the aid to discuss their grievances.</DisplayName>
+                <FollowUpText>You take time out of your busy schedule to meet with the aid in person. After a long (mostly) private conversation, you identify some key problems and how to resolve them.
+
+[4 Stamina, +60% Ad Effectiveness for 2 turns.]</FollowUpText>
+                <FollowUpResponse>Understood.</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyPlayerStat</Type>
+                        <ModifyType>Add</ModifyType>
+                        <PlayerStatType>Stamina</PlayerStatType>
+                        <Value>-4</Value>
+                    </InstantEffect>
+                </InstantEffects>
+                <LongTermEffects>
+                    <LongTermEffect>
+                        <Name>ReplyAll</Name>
+                        <HasLifetime>true</HasLifetime>
+                        <Lifetime>2</Lifetime>
+                        <DisplayText>{TargetName} has Ad Effectiveness increased by 60%.</DisplayText>
+                        <VisibilityState>VisibleToAll</VisibilityState>
+                        <TriggeredEffects>
+                            <TriggeredEffect>
+                                <TriggerType>WhileActive</TriggerType>
+                                <EffectModifiers>
+                                    <EffectModifier>
+                                        <Target>TargetPlayer</Target>
+                                        <Type>ModifyPlayerStat</Type>
+                                        <ModifyType>Add</ModifyType>
+                                        <StateTarget>AllStates</StateTarget>
+                                        <PlayerStatType>AdEffectiveness</PlayerStatType>
+                                        <StringValue />
+                                        <Value>0.6</Value>
+                                    </EffectModifier>
+                                </EffectModifiers>
+                                <NotificationData>
+                                    <NotificationNewsTickerText>
+                                        <NewsText>{TargetName} met with a disgruntled aid and increased their Ad Effectiveness while at it.</NewsText>
+                                    </NotificationNewsTickerText>
+                                </NotificationData>
+                            </TriggeredEffect>
+                        </TriggeredEffects>
+                    </LongTermEffect>
+                </LongTermEffects>
+            </Option>
+            <Option>
+                <DisplayName>How about a little... help?</DisplayName>
+                <FollowUpText>You discreetly hand the aid 50K.
+
+[-50K Funds.]</FollowUpText>
+                <FollowUpResponse>My... gift to you.</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyPlayerStat</Type>
+                        <ModifyType>Add</ModifyType>
+                        <PlayerStatType>Funds</PlayerStatType>
+                        <Value>-50</Value>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+            <Option>
+                <DisplayName>Get your spin team to turn the criticism into a joke.</DisplayName>
+                <FollowUpText>You get your spin team to use some of your ad investments to refocus the story to paint you in a better light. The Media loves it, but the American People see through it.
+
+[-40% Ad Effectiveness for 3 turns, -5% Enthusiasm in all States]</FollowUpText>
+                <FollowUpResponse>Understood.</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyEnthusiasm</Type>
+                        <ModifyType>Add</ModifyType>
+                        <StateTarget>AllStates</StateTarget>
+                        <Value>-5</Value>
+                    </InstantEffect>
+                </InstantEffects>
+                <LongTermEffects>
+                    <LongTermEffect>
+                        <Name>ReplyAll</Name>
+                        <HasLifetime>true</HasLifetime>
+                        <Lifetime>3</Lifetime>
+                        <DisplayText>{TargetName} has Ad Effectiveness decreased by 40%.</DisplayText>
+                        <VisibilityState>VisibleToAll</VisibilityState>
+                        <TriggeredEffects>
+                            <TriggeredEffect>
+                                <TriggerType>WhileActive</TriggerType>
+                                <EffectModifiers>
+                                    <EffectModifier>
+                                        <Target>TargetPlayer</Target>
+                                        <Type>ModifyPlayerStat</Type>
+                                        <ModifyType>Add</ModifyType>
+                                        <StateTarget>AllStates</StateTarget>
+                                        <PlayerStatType>AdEffectiveness</PlayerStatType>
+                                        <StringValue />
+                                        <Value>-0.4</Value>
+                                    </EffectModifier>
+                                </EffectModifiers>
+                                <NotificationData>
+                                    <NotificationNewsTickerText>
+                                        <NewsText>A disgruntled email from the campaing of {TargetName} has detracted from their message, reducing their Ad Effectiveness.</NewsText>
+                                    </NotificationNewsTickerText>
+                                </NotificationData>
+                            </TriggeredEffect>
+                        </TriggeredEffects>
+                    </LongTermEffect>
+                </LongTermEffects>
+            </Option>
+        </Options>
+    </CRandomEvent>
+    
+    <!--<CRandomEvent InternalName="MysteriousInformant">
+        <Image>Message from Informant</Image>
+        <Headline>Reply All</Headline>
+        <Paragraph>{CandidateLName}, I've come to possess some information about your opponents through means that aren't of concern. I'm willing to use or sell the data for the right price. If you don't pay, though, maybe your opponent will.</Paragraph>
+        <Options>
+            <Option>
+                <DisplayName>How about $20K to release the information?</DisplayName>
+                <FollowUpText>You have a deal; I'll make sure this information makes it out there and into the eyes of the public.
+
+[-$20K Funds, All Opponents discard a Card from their hand next turn.]</FollowUpText>
+                <FollowUpResponse>Let's never talk of this deal again.</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyPlayerStat</Type>
+                        <ModifyType>Add</ModifyType>
+                        <PlayerStatType>Funds</PlayerStatType>
+                        <Value>-20</Value>
+                    </InstantEffect>
+                </InstantEffects>
+                <LongTermEffects>
+                    <LongTermEffect>
+                        <Name>MysteriousInformant</Name>
+                        <HasLifetime>true</HasLifetime>
+                        <Lifetime>2</Lifetime>
+                        <DisplayText>Next turn all opponents discard a card.</DisplayText>
+                        <VisibilityState>VisibleToTarget</VisibilityState>
+                        <TriggeredEffects>
+                            <TriggeredEffect>
+                                <TriggerType>OnNewTurn</TriggerType>
+                                <EffectModifiers>
+                                    <EffectModifier>
+                                        <Target>TargetPlayerOpponents</Target>
+                                        <Type>RemoveActionCardFromHand</Type>
+                                    </EffectModifier>
+                                </EffectModifiers>
+                                <NotificationData>
+                                    <NotificationTitle>Leaked Information</NotificationTitle>
+                                    <NotificationImage />
+                                    <NotificationPopupFlavorText>
+                                        <PopupText>Someone leaked some unsavory information to another candidate who utilized the information.</PopupText>
+                                    </NotificationPopupFlavorText>
+                                    <NotificationEffectText>Everyone but Initiator Discard a card.</NotificationEffectText>
+                                    <WhoToNotify>InformTarget</WhoToNotify>
+                                </NotificationData>
+                            </TriggeredEffect>
+                        </TriggeredEffects>
+                    </LongTermEffect>
+                </LongTermEffects>
+            </Option>
+            <Option>
+                <DisplayName>How about $40K to give me the information?</DisplayName>
+                <FollowUpText>You have a deal; I'll provide your campaign with a secure copy of the information I've acquired.
+
+[-$40K Funds, Draw a card.]</FollowUpText>
+                <FollowUpResponse>Thank you for your discretion.</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>ModifyPlayerStat</Type>
+                        <ModifyType>Add</ModifyType>
+                        <PlayerStatType>Funds</PlayerStatType>
+                        <Value>-40</Value>
+                    </InstantEffect>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>DrawActionCard</Type>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+            <Option>
+                <DisplayName>I'm not paying you for your ill-gotten goods.</DisplayName>
+                <FollowUpText>Your loss; too bad I have just as much information from you. Maybe your opponent is willing to pay.
+
+[Discard a card.]</FollowUpText>
+                <FollowUpResponse>You should be ashamed.</FollowUpResponse>
+                <InstantEffects>
+                    <InstantEffect>
+                        <Target>TargetPlayer</Target>
+                        <Type>RemoveActionCardFromHand</Type>
+                    </InstantEffect>
+                </InstantEffects>
+            </Option>
+        </Options>
+    </CRandomEvent>-->
+
+</RandomEvents>

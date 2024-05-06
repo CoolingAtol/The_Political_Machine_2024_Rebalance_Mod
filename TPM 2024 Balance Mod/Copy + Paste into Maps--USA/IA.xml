@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<StateInfo>
+	<UID>11</UID>
+	<Name>Iowa</Name>
+	<ShortName>IA</ShortName>
+	<StrategyDefaultLeft>0</StrategyDefaultLeft>
+	<StrategyDefaultRight>0</StrategyDefaultRight>
+	<VotingPop>2165</VotingPop>
+	<Wealth>231654</Wealth>
+	<ElecVotes>6</ElecVotes>
+  <DemocratDelegates>46</DemocratDelegates>
+  <RepublicanDelegates>40</RepublicanDelegates>
+	<GenderData Count="2">
+		<Gender ID="Male">46</Gender>
+		<Gender ID="Female">54</Gender>
+	</GenderData>
+	<RaceData Count="5">
+		<Race ID="White">96</Race>
+		<Race ID="Black">1</Race>
+		<Race ID="Hispanic">1</Race>
+		<Race ID="Asian">1</Race>
+		<Race ID="Other">1</Race>
+	</RaceData>
+	<AgeData Count="4">
+		<Age ID="18to29">17</Age>
+		<Age ID="30to44">26</Age>
+		<Age ID="45to59">29</Age>
+		<Age ID="60plus">28</Age>
+	</AgeData>
+	<IncomeData Count="6">
+		<Income ID="Under15">10</Income>
+		<Income ID="15to30">16</Income>
+		<Income ID="30to50">24</Income>
+		<Income ID="50to75">26</Income>
+		<Income ID="75to100">11</Income>
+		<Income ID="100plus">12</Income>
+	</IncomeData>
+	<PartyData Count="3">
+		<Party ID="Left">30</Party>
+		<Party ID="Right">38</Party>
+		<Party ID="Independent">32</Party>
+	</PartyData>
+	<ViewData Count="3">
+		<View ID="Lib">19</View>
+		<View ID="Mod">45</View>
+		<View ID="Con">36</View>
+	</ViewData>
+	<AdjacentStates Count="6">
+		<AdjState>13</AdjState>
+		<AdjState>22</AdjState>
+		<AdjState>23</AdjState>
+		<AdjState>28</AdjState>
+		<AdjState>40</AdjState>
+		<AdjState>47</AdjState>
+	</AdjacentStates>
+</StateInfo>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<StateInfo>
+	<UID>34</UID>
+	<Name>Ohio</Name>
+	<ShortName>OH</ShortName>
+	<StrategyDefaultLeft>1</StrategyDefaultLeft>
+	<StrategyDefaultRight>1</StrategyDefaultRight>
+	<VotingPop>8433</VotingPop>
+	<Wealth>822670</Wealth>
+	<ElecVotes>17</ElecVotes>
+  <DemocratDelegates>143</DemocratDelegates>
+  <RepublicanDelegates>79</RepublicanDelegates>
+	<GenderData Count="2">
+		<Gender ID="Male">48</Gender>
+		<Gender ID="Female">52</Gender>
+	</GenderData>
+	<RaceData Count="5">
+		<Race ID="White">84</Race>
+		<Race ID="Black">12</Race>
+		<Race ID="Hispanic">2</Race>
+		<Race ID="Asian">0</Race>
+		<Race ID="Other">2</Race>
+	</RaceData>
+	<AgeData Count="4">
+		<Age ID="18to29">13</Age>
+		<Age ID="30to44">27</Age>
+		<Age ID="45to59">34</Age>
+		<Age ID="60plus">26</Age>
+	</AgeData>
+	<IncomeData Count="6">
+		<Income ID="Under15">7</Income>
+		<Income ID="15to30">15</Income>
+		<Income ID="30to50">23</Income>
+		<Income ID="50to75">24</Income>
+		<Income ID="75to100">14</Income>
+		<Income ID="100plus">17</Income>
+	</IncomeData>
+	<PartyData Count="3">
+		<Party ID="Left">11</Party>
+		<Party ID="Right">12</Party>
+		<Party ID="Independent">77</Party>
+	</PartyData>
+	<ViewData Count="3">
+		<View ID="Lib">19</View>
+		<View ID="Mod">46</View>
+		<View ID="Con">35</View>
+	</ViewData>
+	<AdjacentStates Count="5">
+		<AdjState>14</AdjState>
+		<AdjState>16</AdjState>
+		<AdjState>21</AdjState>
+		<AdjState>37</AdjState>
+		<AdjState>48</AdjState>
+	</AdjacentStates>
+</StateInfo>

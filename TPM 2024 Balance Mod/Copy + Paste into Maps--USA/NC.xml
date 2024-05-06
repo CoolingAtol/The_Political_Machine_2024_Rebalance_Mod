@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<StateInfo>
+	<UID>26</UID>
+	<Name>North Carolina</Name>
+	<ShortName>NC</ShortName>
+	<StrategyDefaultLeft>0</StrategyDefaultLeft>
+	<StrategyDefaultRight>1</StrategyDefaultRight>
+	<VotingPop>5795</VotingPop>
+	<Wealth>730110</Wealth>
+	<ElecVotes>16</ElecVotes>
+  <DemocratDelegates>133</DemocratDelegates>
+  <RepublicanDelegates>74</RepublicanDelegates>
+	<GenderData Count="2">
+		<Gender ID="Male">41</Gender>
+		<Gender ID="Female">59</Gender>
+	</GenderData>
+	<RaceData Count="5">
+		<Race ID="White">71</Race>
+		<Race ID="Black">26</Race>
+		<Race ID="Hispanic">1</Race>
+		<Race ID="Asian">0</Race>
+		<Race ID="Other">2</Race>
+	</RaceData>
+	<AgeData Count="4">
+		<Age ID="18to29">14</Age>
+		<Age ID="30to44">33</Age>
+		<Age ID="45to59">30</Age>
+		<Age ID="60plus">22</Age>
+	</AgeData>
+	<IncomeData Count="6">
+		<Income ID="Under15">10</Income>
+		<Income ID="15to30">18</Income>
+		<Income ID="30to50">22</Income>
+		<Income ID="50to75">21</Income>
+		<Income ID="75to100">12</Income>
+		<Income ID="100plus">17</Income>
+	</IncomeData>
+	<PartyData Count="3">
+		<Party ID="Left">34</Party>
+		<Party ID="Right">31</Party>
+		<Party ID="Independent">35</Party>
+	</PartyData>
+	<ViewData Count="3">
+		<View ID="Lib">17</View>
+		<View ID="Mod">46</View>
+		<View ID="Con">38</View>
+	</ViewData>
+	<AdjacentStates Count="4">
+		<AdjState>9</AdjState>
+		<AdjState>39</AdjState>
+		<AdjState>41</AdjState>
+		<AdjState>44</AdjState>
+	</AdjacentStates>
+</StateInfo>

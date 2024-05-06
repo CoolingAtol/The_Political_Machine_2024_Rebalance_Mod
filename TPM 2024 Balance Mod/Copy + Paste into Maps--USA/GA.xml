@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<StateInfo>
+	<UID>9</UID>
+	<Name>Georgia</Name>
+	<ShortName>GA</ShortName>
+	<StrategyDefaultLeft>0</StrategyDefaultLeft>
+	<StrategyDefaultRight>1</StrategyDefaultRight>
+	<VotingPop>5893</VotingPop>
+	<Wealth>755539</Wealth>
+	<ElecVotes>16</ElecVotes>
+  <DemocratDelegates>123</DemocratDelegates>
+  <RepublicanDelegates>59</RepublicanDelegates>
+	<GenderData Count="2">
+		<Gender ID="Male">47</Gender>
+		<Gender ID="Female">53</Gender>
+	</GenderData>
+	<RaceData Count="5">
+		<Race ID="White">78</Race>
+		<Race ID="Black">16</Race>
+		<Race ID="Hispanic">4</Race>
+		<Race ID="Asian">1</Race>
+		<Race ID="Other">2</Race>
+	</RaceData>
+	<AgeData Count="4">
+		<Age ID="18to29">16</Age>
+		<Age ID="30to44">30</Age>
+		<Age ID="45to59">32</Age>
+		<Age ID="60plus">22</Age>
+	</AgeData>
+	<IncomeData Count="6">
+		<Income ID="Under15">5</Income>
+		<Income ID="15to30">8</Income>
+		<Income ID="30to50">18</Income>
+		<Income ID="50to75">23</Income>
+		<Income ID="75to100">19</Income>
+		<Income ID="100plus">27</Income>
+	</IncomeData>
+	<PartyData Count="3">
+		<Party ID="Left">39</Party>
+		<Party ID="Right">41</Party>
+		<Party ID="Independent">20</Party>
+	</PartyData>
+	<ViewData Count="3">
+		<View ID="Lib">13</View>
+		<View ID="Mod">45</View>
+		<View ID="Con">42</View>
+	</ViewData>
+	<AdjacentStates Count="5">
+		<AdjState>1</AdjState>
+		<AdjState>8</AdjState>
+		<AdjState>26</AdjState>
+		<AdjState>39</AdjState>
+		<AdjState>41</AdjState>
+	</AdjacentStates>
+</StateInfo>

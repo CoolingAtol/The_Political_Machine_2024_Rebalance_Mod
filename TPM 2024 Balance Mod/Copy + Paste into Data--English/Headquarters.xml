@@ -1,0 +1,345 @@
+<HeadquartersList>
+    <HeadquartersModelRep>HQ1_Model_Red</HeadquartersModelRep>
+    <CHeadquarters InternalName="DefaultHeadquarters">
+        <HeadquartersTitle>BaseHeadquarters_Title</HeadquartersTitle>
+        <HeadquartersDescription>BaseHeadquarters_Desc</HeadquartersDescription>
+        <HeadquartersIconDem>HQ_CampaignOffice_L3_Blue</HeadquartersIconDem>
+        <HeadquartersIconRep>HQ_CampaignOffice_L3_Red</HeadquartersIconRep>
+        <HeadquartersModelDem>DefaultHeadquarters_Model_Blue</HeadquartersModelDem>
+        <HeadquartersModelRep>DefaultHeadquarters_Model_Red</HeadquartersModelRep>
+        <BonusTextEntries>
+            <BonusText>BaseHeadquarters_BonusText_1</BonusText>
+            <BonusText>BaseHeadquarters_BonusText_2</BonusText>
+        </BonusTextEntries>
+        <!-- General Data -->
+        <HeadquartersLevel>1</HeadquartersLevel>
+        <HeadquartersCost>250</HeadquartersCost>
+        <!-- Thousands -->
+        <IncomePerTurn>30</IncomePerTurn>
+        <!-- Thousands -->
+        <UpgradePaths>
+            <!-- different paths that this building can upgrade towards -->
+            <HQInternalID>VoterEngagementHQ_Level1</HQInternalID>
+            <HQInternalID>IdeologyAndPolicyHQ_Level1</HQInternalID>
+            <HQInternalID>NetworkingAndInfluenceHQ_Level1</HQInternalID>
+            <HQInternalID>ConsultingHQ_Level1</HQInternalID>
+        </UpgradePaths>
+        <EnthusiasmBonusPerTurnModifier>1.01</EnthusiasmBonusPerTurnModifier>
+    </CHeadquarters>
+    <!-- And setup the rest -->
+    <!-- Voter Registration Center -->
+    <CHeadquarters InternalName="VoterEngagementHQ_Level1">
+        <HeadquartersTitle>VoterEngagementHQ_Level1_Title</HeadquartersTitle>
+        <HeadquartersDescription>VoterEngagementHQ_Level1_Desc</HeadquartersDescription>
+        <HeadquartersIconDem>vote_engagement_lv1_Blue</HeadquartersIconDem>
+        <HeadquartersIconRep>vote_engagement_lv1_Red</HeadquartersIconRep>
+        <HeadquartersModelDem>VoterEngagementHQ_Level1_Model_Blue</HeadquartersModelDem>
+        <HeadquartersModelRep>VoterEngagementHQ_Level1_Model_Red</HeadquartersModelRep>
+        <BonusTextEntries>
+            <BonusText>VoterEngagementHQ_Level1_BonusText_1</BonusText>
+            <BonusText>VoterEngagementHQ_Level1_BonusText_2</BonusText>
+            <BonusText>VoterEngagementHQ_Level1_BonusText_3</BonusText>
+        </BonusTextEntries>
+        <HeadquartersLevel>2</HeadquartersLevel>
+        <HeadquartersCost>250</HeadquartersCost>
+        <!-- Thousands -->
+        <IncomePerTurn>0</IncomePerTurn>
+        <!-- Thousands -->
+        <NumAdditionalTopIssues>3</NumAdditionalTopIssues>
+        <UpgradePaths>
+            <!-- different paths that this building can upgrade towards -->
+            <HQInternalID>VoterEngagementHQ_Level2</HQInternalID>
+			<HQInternalID>IdeologyAndPolicyHQ_Level2</HQInternalID>
+        </UpgradePaths>
+        <EnthusiasmBonusPerTurnModifier>1.02</EnthusiasmBonusPerTurnModifier>
+        <EnthusiasmBonusPerTurnAdjacentModifier>1.02</EnthusiasmBonusPerTurnAdjacentModifier>
+    </CHeadquarters>
+    <!-- Mobilization Hub -->
+    <CHeadquarters InternalName="VoterEngagementHQ_Level2">
+        <HeadquartersTitle>VoterEngagementHQ_Level2_Title</HeadquartersTitle>
+        <HeadquartersDescription>VoterEngagementHQ_Level2_Desc</HeadquartersDescription>
+        <HeadquartersIconDem>vote_engagement_lv1_Blue</HeadquartersIconDem>
+        <HeadquartersIconRep>vote_engagement_lv1_Red</HeadquartersIconRep>
+        <HeadquartersModelDem>VoterEngagementHQ_Level2_Model_Blue</HeadquartersModelDem>
+        <HeadquartersModelRep>VoterEngagementHQ_Level2_Model_Red</HeadquartersModelRep>
+        <BonusTextEntries>
+            <BonusText>VoterEngagementHQ_Level2_BonusText_1</BonusText>
+            <BonusText>VoterEngagementHQ_Level2_BonusText_2</BonusText>
+            <BonusText>VoterEngagementHQ_Level2_BonusText_3</BonusText>
+            <BonusText>VoterEngagementHQ_Level2_BonusText_4</BonusText>
+        </BonusTextEntries>
+        <HeadquartersLevel>3</HeadquartersLevel>
+        <HeadquartersCost>250</HeadquartersCost>
+        <!-- Thousands -->
+        <IncomePerTurn>-25</IncomePerTurn>
+        <!-- Thousands -->
+        <NumAdditionalTopIssues>5</NumAdditionalTopIssues>
+        <UpgradePaths>
+            <!-- different paths that this building can upgrade towards -->
+            <HQInternalID>VoterEngagementHQ_Level3</HQInternalID>
+        </UpgradePaths>
+        <EnthusiasmBonusPerTurnModifier>1.03</EnthusiasmBonusPerTurnModifier>
+        <EnthusiasmBonusPerTurnAdjacentModifier>1.03</EnthusiasmBonusPerTurnAdjacentModifier>
+    </CHeadquarters>
+    <!-- Get out the vote nexus -->
+    <CHeadquarters InternalName="VoterEngagementHQ_Level3">
+        <HeadquartersTitle>VoterEngagementHQ_Level3_Title</HeadquartersTitle>
+        <HeadquartersDescription>VoterEngagementHQ_Level3_Desc</HeadquartersDescription>
+        <HeadquartersIconDem>vote_engagement_lv1_Blue</HeadquartersIconDem>
+        <HeadquartersIconRep>vote_engagement_lv1_Red</HeadquartersIconRep>
+        <HeadquartersModelDem>VoterEngagementHQ_Level3_Model_Blue</HeadquartersModelDem>
+        <HeadquartersModelRep>VoterEngagementHQ_Level3_Model_Red</HeadquartersModelRep>
+        <BonusTextEntries>
+            <BonusText>VoterEngagementHQ_Level3_BonusText_1</BonusText>
+            <BonusText>VoterEngagementHQ_Level3_BonusText_2</BonusText>
+            <BonusText>VoterEngagementHQ_Level3_BonusText_3</BonusText>
+            <BonusText>VoterEngagementHQ_Level3_BonusText_4</BonusText>
+        </BonusTextEntries>
+        <HeadquartersLevel>4</HeadquartersLevel>
+        <HeadquartersCost>250</HeadquartersCost>
+        <!-- Thousands -->
+        <IncomePerTurn>-50</IncomePerTurn>
+        <!-- Thousands -->
+        <NumAdditionalTopIssues>6</NumAdditionalTopIssues>
+        <EnthusiasmBonusPerTurnModifier>1.04</EnthusiasmBonusPerTurnModifier>
+        <EnthusiasmBonusPerTurnAdjacentModifier>1.04</EnthusiasmBonusPerTurnAdjacentModifier>
+    </CHeadquarters>
+    <!-- Think Tank -->
+    <CHeadquarters InternalName="IdeologyAndPolicyHQ_Level1">
+        <HeadquartersTitle>IdeologyAndPolicyHQ_Level1_Title</HeadquartersTitle>
+        <HeadquartersDescription>IdeologyAndPolicyHQ_Level1_Desc</HeadquartersDescription>
+        <HeadquartersIconDem>ideology_policy_lv1_Blue</HeadquartersIconDem>
+        <HeadquartersIconRep>ideology_policy_lv1_Red</HeadquartersIconRep>
+        <HeadquartersModelDem>IdeologyAndPolicyHQ_Level1_Model_Blue</HeadquartersModelDem>
+        <HeadquartersModelRep>IdeologyAndPolicyHQ_Level1_Model_Red</HeadquartersModelRep>
+        <BonusTextEntries>
+            <BonusText>IdeologyAndPolicyHQ_Level1_BonusText_1</BonusText>
+            <BonusText>IdeologyAndPolicyHQ_Level1_BonusText_2</BonusText>
+            <BonusText>IdeologyAndPolicyHQ_Level1_BonusText_3</BonusText>
+            <BonusText>BaseHeadquarters_BonusText_2</BonusText>
+        </BonusTextEntries>
+        <HeadquartersLevel>2</HeadquartersLevel>
+        <HeadquartersCost>250</HeadquartersCost>
+        <!-- Thousands -->
+        <IncomePerTurn>0</IncomePerTurn>
+        <!-- Thousands -->
+        <NumAdditionalTopIssues>10</NumAdditionalTopIssues>
+        <UpgradePaths>
+            <!-- different paths that this building can upgrade towards -->
+            <HQInternalID>IdeologyAndPolicyHQ_Level2</HQInternalID>
+			<HQInternalID>VoterEngagementHQ_Level2</HQInternalID>
+        </UpgradePaths>
+        <IssueScoreModifier>1.05</IssueScoreModifier>
+        <EnthusiasmBonusPerTurnModifier>1.01</EnthusiasmBonusPerTurnModifier>
+    </CHeadquarters>
+    <!-- Poliy Research Institute -->
+    <CHeadquarters InternalName="IdeologyAndPolicyHQ_Level2">
+        <HeadquartersTitle>IdeologyAndPolicyHQ_Level2_Title</HeadquartersTitle>
+        <HeadquartersDescription>IdeologyAndPolicyHQ_Level2_Desc</HeadquartersDescription>
+        <HeadquartersIconDem>ideology_policy_lv1_Blue</HeadquartersIconDem>
+        <HeadquartersIconRep>ideology_policy_lv1_Red</HeadquartersIconRep>
+        <HeadquartersModelDem>IdeologyAndPolicyHQ_Level2_Model_Blue</HeadquartersModelDem>
+        <HeadquartersModelRep>IdeologyAndPolicyHQ_Level2_Model_Red</HeadquartersModelRep>
+        <BonusTextEntries>
+            <BonusText>IdeologyAndPolicyHQ_Level2_BonusText_1</BonusText>
+            <BonusText>IdeologyAndPolicyHQ_Level2_BonusText_2</BonusText>
+            <BonusText>IdeologyAndPolicyHQ_Level2_BonusText_3</BonusText>
+            <BonusText>BaseHeadquarters_BonusText_2</BonusText>
+        </BonusTextEntries>
+        <HeadquartersLevel>3</HeadquartersLevel>
+        <HeadquartersCost>250</HeadquartersCost>
+        <!-- Thousands -->
+        <IncomePerTurn>-25</IncomePerTurn>
+        <!-- Thousands -->
+        <NumAdditionalTopIssues>10</NumAdditionalTopIssues>
+        <UpgradePaths>
+            <!-- different paths that this building can upgrade towards -->
+            <HQInternalID>IdeologyAndPolicyHQ_Level3</HQInternalID>
+        </UpgradePaths>
+        <IssueScoreModifier>1.07</IssueScoreModifier>
+        <EnthusiasmBonusPerTurnModifier>1.01</EnthusiasmBonusPerTurnModifier>
+    </CHeadquarters>
+    <!-- Center for Public Opinion -->
+    <CHeadquarters InternalName="IdeologyAndPolicyHQ_Level3">
+        <HeadquartersTitle>IdeologyAndPolicyHQ_Level3_Title</HeadquartersTitle>
+        <HeadquartersDescription>IdeologyAndPolicyHQ_Level3_Desc</HeadquartersDescription>
+        <HeadquartersIconDem>ideology_policy_lv1_Blue</HeadquartersIconDem>
+        <HeadquartersIconRep>ideology_policy_lv1_Red</HeadquartersIconRep>
+        <HeadquartersModelDem>IdeologyAndPolicyHQ_Level3_Model_Blue</HeadquartersModelDem>
+        <HeadquartersModelRep>IdeologyAndPolicyHQ_Level3_Model_Red</HeadquartersModelRep>
+        <BonusTextEntries>
+            <BonusText>IdeologyAndPolicyHQ_Level3_BonusText_1</BonusText>
+            <BonusText>IdeologyAndPolicyHQ_Level3_BonusText_2</BonusText>
+            <BonusText>IdeologyAndPolicyHQ_Level3_BonusText_3</BonusText>
+            <BonusText>IdeologyAndPolicyHQ_Level4_BonusText_3</BonusText>
+            <BonusText>BaseHeadquarters_BonusText_2</BonusText>
+        </BonusTextEntries>
+        <HeadquartersLevel>4</HeadquartersLevel>
+        <HeadquartersCost>250</HeadquartersCost>
+        <!-- Thousands -->
+        <IncomePerTurn>-50</IncomePerTurn>
+        <!-- Thousands -->
+        <NumAdditionalTopIssues>15</NumAdditionalTopIssues>
+        <IssueScoreModifier>1.11</IssueScoreModifier>
+        <IncreaseTop3IssueImportanceBy5>true</IncreaseTop3IssueImportanceBy5>
+        <EnthusiasmBonusPerTurnModifier>1.02</EnthusiasmBonusPerTurnModifier>
+    </CHeadquarters>
+    <!-- Networking Lounge -->
+    <CHeadquarters InternalName="NetworkingAndInfluenceHQ_Level1">
+        <HeadquartersTitle>NetworkingAndInfluenceHQ_Level1_Title</HeadquartersTitle>
+        <HeadquartersDescription>NetworkingAndInfluenceHQ_Level1_Desc</HeadquartersDescription>
+        <HeadquartersIconDem>network_influence_lvl1_Blue</HeadquartersIconDem>
+        <HeadquartersIconRep>network_influence_lvl1_Red</HeadquartersIconRep>
+        <HeadquartersModelDem>NetworkingAndInfluenceHQ_Level1_Model_Blue</HeadquartersModelDem>
+        <HeadquartersModelRep>NetworkingAndInfluenceHQ_Level1_Model_Red</HeadquartersModelRep>
+        <BonusTextEntries>
+            <BonusText>NetworkingAndInfluenceHQ_Level1_BonusText_1</BonusText>
+            <BonusText>NetworkingAndInfluenceHQ_Level1_BonusText_2</BonusText>
+            <BonusText>NetworkingAndInfluenceHQ_Level1_BonusText_3</BonusText>
+            <BonusText>BaseHeadquarters_BonusText_2</BonusText>
+        </BonusTextEntries>
+        <HeadquartersLevel>2</HeadquartersLevel>
+        <HeadquartersCost>250</HeadquartersCost>
+        <!-- Thousands -->
+        <IncomePerTurn>0</IncomePerTurn>
+        <!-- Thousands -->
+        <NumAdditionalTopIssues>7</NumAdditionalTopIssues>
+        <UpgradePaths>
+            <!-- different paths that this building can upgrade towards -->
+            <HQInternalID>NetworkingAndInfluenceHQ_Level2</HQInternalID>
+			<HQInternalID>ConsultingHQ_Level2</HQInternalID>
+        </UpgradePaths>
+        <PoliticalCapitalGainPerTurn>0.5</PoliticalCapitalGainPerTurn>
+        <EnthusiasmBonusPerTurnModifier>1.01</EnthusiasmBonusPerTurnModifier>
+    </CHeadquarters>
+    <CHeadquarters InternalName="NetworkingAndInfluenceHQ_Level2">
+        <HeadquartersTitle>NetworkingAndInfluenceHQ_Level2_Title</HeadquartersTitle>
+        <HeadquartersDescription>NetworkingAndInfluenceHQ_Level2_Desc</HeadquartersDescription>
+        <HeadquartersIconDem>network_influence_lvl1_Blue</HeadquartersIconDem>
+        <HeadquartersIconRep>network_influence_lvl1_Red</HeadquartersIconRep>
+        <HeadquartersModelDem>NetworkingAndInfluenceHQ_Level2_Model_Blue</HeadquartersModelDem>
+        <HeadquartersModelRep>NetworkingAndInfluenceHQ_Level2_Model_Red</HeadquartersModelRep>
+        <BonusTextEntries>
+            <BonusText>NetworkingAndInfluenceHQ_Level2_BonusText_2</BonusText>
+            <BonusText>NetworkingAndInfluenceHQ_Level2_BonusText_3</BonusText>
+            <BonusText>NetworkingAndInfluenceHQ_Level2_BonusText_4</BonusText>
+            <BonusText>BaseHeadquarters_BonusText_2</BonusText>
+        </BonusTextEntries>
+        <HeadquartersLevel>3</HeadquartersLevel>
+        <HeadquartersCost>250</HeadquartersCost>
+        <!-- Thousands -->
+        <IncomePerTurn>-25</IncomePerTurn>
+        <!-- Thousands -->
+        <NumAdditionalTopIssues>7</NumAdditionalTopIssues>
+        <UpgradePaths>
+            <!-- different paths that this building can upgrade towards -->
+            <HQInternalID>NetworkingAndInfluenceHQ_Level3</HQInternalID>
+        </UpgradePaths>
+        <PoliticalCapitalGainPerTurn>0.75</PoliticalCapitalGainPerTurn>
+        <EnthusiasmBonusPerTurnModifier>1.01</EnthusiasmBonusPerTurnModifier>
+    </CHeadquarters>
+    <CHeadquarters InternalName="NetworkingAndInfluenceHQ_Level3">
+        <HeadquartersTitle>NetworkingAndInfluenceHQ_Level3_Title</HeadquartersTitle>
+        <HeadquartersDescription>NetworkingAndInfluenceHQ_Level3_Desc</HeadquartersDescription>
+        <HeadquartersIconDem>network_influence_lvl1_Blue</HeadquartersIconDem>
+        <HeadquartersIconRep>network_influence_lvl1_Red</HeadquartersIconRep>
+        <HeadquartersModelDem>NetworkingAndInfluenceHQ_Level3_Model_Blue</HeadquartersModelDem>
+        <HeadquartersModelRep>NetworkingAndInfluenceHQ_Level3_Model_Red</HeadquartersModelRep>
+        <BonusTextEntries>
+            <BonusText>NetworkingAndInfluenceHQ_Level3_BonusText_1</BonusText>
+            <BonusText>NetworkingAndInfluenceHQ_Level3_BonusText_2</BonusText>
+            <BonusText>NetworkingAndInfluenceHQ_Level3_BonusText_3</BonusText>
+            <BonusText>NetworkingAndInfluenceHQ_Level3_BonusText_4</BonusText>
+            <BonusText>BaseHeadquarters_BonusText_2</BonusText>
+        </BonusTextEntries>
+        <HeadquartersLevel>4</HeadquartersLevel>
+        <HeadquartersCost>250</HeadquartersCost>
+        <!-- Thousands -->
+        <IncomePerTurn>-50</IncomePerTurn>
+        <!-- Thousands -->
+        <NumAdditionalTopIssues>10</NumAdditionalTopIssues>
+        <PoliticalCapitalGainPerTurn>1.5</PoliticalCapitalGainPerTurn>
+        <DrawNumPoliticalActionCardOnBuild>2</DrawNumPoliticalActionCardOnBuild>
+        <EnthusiasmBonusPerTurnModifier>1.02</EnthusiasmBonusPerTurnModifier>
+    </CHeadquarters>
+    <CHeadquarters InternalName="ConsultingHQ_Level1">
+        <HeadquartersTitle>ConsultingHQ_Level1_Title</HeadquartersTitle>
+        <HeadquartersDescription>ConsultingHQ_Level1_Desc</HeadquartersDescription>
+        <HeadquartersIconDem>Consulting_Lvl1_Blue</HeadquartersIconDem>
+        <HeadquartersIconRep>Consulting_Lvl1_Red</HeadquartersIconRep>
+        <HeadquartersModelDem>ConsultingHQ_Level1_Model_Blue</HeadquartersModelDem>
+        <HeadquartersModelRep>ConsultingHQ_Level1_Model_Red</HeadquartersModelRep>
+        <BonusTextEntries>
+            <BonusText>ConsultingHQ_Level1_BonusText_1</BonusText>
+            <BonusText>ConsultingHQ_Level1_BonusText_2</BonusText>
+            <BonusText>ConsultingHQ_Level1_BonusText_3</BonusText>
+            <BonusText>BaseHeadquarters_BonusText_2</BonusText>
+        </BonusTextEntries>
+        <HeadquartersLevel>2</HeadquartersLevel>
+        <HeadquartersCost>250</HeadquartersCost>
+        <!-- Thousands -->
+        <IncomePerTurn>50</IncomePerTurn>
+        <!-- Thousands -->
+        <NumAdditionalTopIssues>2</NumAdditionalTopIssues>
+        <UpgradePaths>
+            <!-- different paths that this building can upgrade towards -->
+            <HQInternalID>ConsultingHQ_Level2</HQInternalID>
+			<HQInternalID>NetworkingAndInfluenceHQ_Level2</HQInternalID>
+        </UpgradePaths>
+        <FundraiserEffectivenessModifier>1.05</FundraiserEffectivenessModifier>
+        <EnthusiasmBonusPerTurnModifier>1.01</EnthusiasmBonusPerTurnModifier>
+    </CHeadquarters>
+    <CHeadquarters InternalName="ConsultingHQ_Level2">
+        <HeadquartersTitle>ConsultingHQ_Level2_Title</HeadquartersTitle>
+        <HeadquartersDescription>ConsultingHQ_Level2_Desc</HeadquartersDescription>
+        <HeadquartersIconDem>Consulting_Lvl1_Blue</HeadquartersIconDem>
+        <HeadquartersIconRep>Consulting_Lvl1_Red</HeadquartersIconRep>
+        <HeadquartersModelDem>ConsultingHQ_Level2_Model_Blue</HeadquartersModelDem>
+        <HeadquartersModelRep>ConsultingHQ_Level2_Model_Red</HeadquartersModelRep>
+        <BonusTextEntries>
+            <BonusText>ConsultingHQ_Level2_BonusText_1</BonusText>
+            <BonusText>ConsultingHQ_Level2_BonusText_2</BonusText>
+            <BonusText>ConsultingHQ_Level2_BonusText_3</BonusText>
+            <BonusText>ConsultingHQ_Level2_BonusText_4</BonusText>
+            <BonusText>BaseHeadquarters_BonusText_2</BonusText>
+        </BonusTextEntries>
+        <HeadquartersLevel>3</HeadquartersLevel>
+        <HeadquartersCost>200</HeadquartersCost>
+        <!-- Thousands -->
+        <IncomePerTurn>100</IncomePerTurn>
+        <!-- Thousands -->
+        <NumAdditionalTopIssues>3</NumAdditionalTopIssues>
+        <UpgradePaths>
+            <!-- different paths that this building can upgrade towards -->
+            <HQInternalID>ConsultingHQ_Level3</HQInternalID>
+        </UpgradePaths>
+        <FundraiserEffectivenessModifier>1.1</FundraiserEffectivenessModifier>
+        <EnthusiasmBonusPerTurnModifier>1.02</EnthusiasmBonusPerTurnModifier>
+    </CHeadquarters>
+    <CHeadquarters InternalName="ConsultingHQ_Level3">
+        <HeadquartersTitle>ConsultingHQ_Level3_Title</HeadquartersTitle>
+        <HeadquartersDescription>ConsultingHQ_Level3_Desc</HeadquartersDescription>
+        <HeadquartersIconDem>Consulting_Lvl1_Blue</HeadquartersIconDem>
+        <HeadquartersIconRep>Consulting_Lvl1_Red</HeadquartersIconRep>
+        <HeadquartersModelDem>ConsultingHQ_Level3_Model_Blue</HeadquartersModelDem>
+        <HeadquartersModelRep>ConsultingHQ_Level3_Model_Red</HeadquartersModelRep>
+        <BonusTextEntries>
+            <BonusText>ConsultingHQ_Level3_BonusText_1</BonusText>
+            <BonusText>ConsultingHQ_Level3_BonusText_2</BonusText>
+            <BonusText>ConsultingHQ_Level3_BonusText_3</BonusText>
+            <BonusText>ConsultingHQ_Level3_BonusText_4</BonusText>
+            <BonusText>ConsultingHQ_Level3_BonusText_5</BonusText>
+            <BonusText>BaseHeadquarters_BonusText_2</BonusText>
+        </BonusTextEntries>
+        <HeadquartersLevel>4</HeadquartersLevel>
+        <HeadquartersCost>250</HeadquartersCost>
+        <!-- Thousands -->
+        <IncomePerTurn>250</IncomePerTurn>
+        <!-- Thousands -->
+        <NumAdditionalTopIssues>4</NumAdditionalTopIssues>
+        <FundraiserEffectivenessModifier>1.15</FundraiserEffectivenessModifier>
+        <FundraiserStaminaCostReduction>1</FundraiserStaminaCostReduction>
+        <StateWealthModifierOnBuild>1.1</StateWealthModifierOnBuild>
+        <EnthusiasmBonusPerTurnModifier>1.03</EnthusiasmBonusPerTurnModifier>
+    </CHeadquarters>
+</HeadquartersList>
